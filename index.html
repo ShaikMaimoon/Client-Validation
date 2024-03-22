@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="MaintainForm.css">
+
+</head>
+
+<body>
+    <div id="head-div">
+        <h2>Maintain Clients</h2>
+    </div>
+    <section id="form-section">
+        <div id="left-div" class="item">
+
+        </div>
+        <div id="middle-div" class="item">
+            <div id="client-div" class="two-col-div">
+                <div>
+                    <table>
+                        <tr>
+                            <td><label for="clientId" class="main-label">Client Id</label></td>
+                            <td><input type="text" id="clientId" name="clientId"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="clientName" class="main-label">Client Name</label>
+                            </td>
+                            <td><input type="text" id="clientName" name="clientName"></td>
+                        </tr>
+                    </table>
+                </div>
+                <div>
+                    <table>
+                        <tr>
+                            <td><label for="clientType" class="main-label">Client Type</label>
+                            </td>
+                            <td><input type="text" id="clientType" name="clientType"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="role" class="main-label">Role</label></td>
+                            <td><select id="role" name="role">
+                                <option value="selectstate" selected disabled>select option.....</option>
+                                    <option value="Role 1">Role 1</option>
+                                    <option value="Role 2">Role 2</option>
+                                    <option value="Role 3">Role 3</option>
+                                    <option value="Role 4">Role 4</option>
+                                    <option value="Role 5">Role 5</option>
+                                </select></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Personal Client Divison-->
+            <div id="personalClient">
+                <h3>personal clients</h3>
+                <div class="two-col-div">
+                    <div>
+                        <table>
+                            <tr>
+                                <td><label for="title" class="main-label">Title</label></td>
+                                <td><input type="text" id="Title" name="Title"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="middleName" class="main-label">Middle
+                                        Name</label></td>
+                                <td><input type="text" id="middleName" name="middleName"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="gender" class="main-label">Gender</label></td>
+                                <td><select id="gender" name="gender">
+                                        <option value="selectstate" selected disabled>select option.....</option>
+                                        <option value="male">Male</option>
+                                        <option value="female">Female</option>
+                                        <option value="other">Other</option>
+                                    </select></td>
+                            </tr>
+                            <tr>
+                                <td><label for="nationality">Nationality</label></td>
+                                <td><select id="nationality" name="nationality">
+                                        <option value="selectstate" selected disabled>select option.....</option>
+                                        <option value="India">India</option>
+                                        <option value="Nepal">Nepal</option>
+                                        <option value="Bangladesh">Bangladesh</option>
+                                        <option value="Srilanka"> Srilanka</option>
+                                        <opton value="China">China</opton>
+                                        <option value="America">America</option>
+                                        <option>Other</option>
+                                    </select></td>
+                            </tr>
+                            <tr>
+                                <td><label for="passportno">Passport No</label></td>
+                                <td><input type="text" id="passportno" name="passportno"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="passportexpirydate">Passport Expiry Date</label></td>
+                                <td><select id="passportexpirydate" name="passportexpirydate">
+                                        <option value="selectstate" selected disabled>select option.....</option>
+                                        <option>option 1</option>
+                                        <option>option 2</option>
+                                        <option>option 3</option>
+                                        <option>option 4</option>
+                                        <option>option 5</option>
+                                        <option>option 6</option>
+                                        <option>Other</option>
+                                    </select></td>
+                            </tr>
+                            <tr>
+                                <td><label for="maritalstatus">Marital Status</label></td>
+                                <td><select id="maritalstatus" name="maritalstatus">
+                                        <option value="selectstate" selected disabled>select option.....</option>
+                                        <option>Married</option>
+                                        <option>Single</option>
+                                        <option>Other</option>
+                                    </select></td>
+                            </tr>
+                            <tr>
+                                <td><label for="numberofchildren">Number Of Children</label></td>
+                                <td><input type="text" id="numberofchildren" name="numberofchildren"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="bloodgroup">Blood Group</label></td>
+                                <td><select id="bloodgroup" name="bloodgroup">
+                                        <option value="selectstate" selected disabled>select option.....</option>
+                                        <option value="A+">A+</option>
+                                        <option value="A-">A-</option>
+                                        <option value="B+">B+</option>
+                                        <option value="B-">B-</option>
+                                        <option value="AB+">AB+</option>
+                                        <option value="AB-">AB-</option>
+                                        <option value="O+">O+</option>
+                                        <option value="O-">O-</option>
+                                    </select></td>
+                            </tr>
+                            <tr>
+                                <td><label for="country" class="main-label">Country</label></td>
+                                <td><select id="country" name="country">
+                                        <option value="selectstate" selected disabled>select option.....</option>
+                                        <option>India</option>
+                                        <option> Russia</option>
+                                        <option>America</option>
+                                        <option>Other</option>
+                                    </select></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="salaried">Salaried</label>
+                                    <input type="radio" id="salaried" name="salaried" class="notApplyCSS">
+                                </td>
+
+                                <td>
+                                    <label for="selfemployeed">Self Employeed</label>
+                                    <input type="radio" id="selfemployeed" name="selfemployeed" class="notApplyCSS">
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div>
+                        <table>
+                            <tr>
+                                <td><label for="firstName" class="main-label">First Name</label>
+                                </td>
+                                <td><input type="text" id="firstName" name="firstName"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="lastName">Last Name</label></td>
+                                <td><input type="text" id="lastName" name="lastName"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="city" class="main-label">City</label></td>
+                                <td><select id="city" name="city">
+                                        <option value="selectstate" selected disabled>select option.....</option>
+                                        <option value="Anantapur">Anantapur</option>
+                                        <option value="Kurnool">Kurnool</option>
+                                        <option value="Kadapa">Kadapa</option>
+                                        <option value="Hyderabad"> Hyderabad</option>
+                                        <opton value="Bangalore">Bangalore</opton>
+                                        <option>Other</option>
+                                    </select></td>
+                            </tr>
+                            <tr>
+                                <td><label for="resident">Resident</label></td>
+                                <td><select id="resident" name="resident">
+                                        <option value="selectstate" selected disabled>select option.....</option>
+                                        <option value="AndhraPradesh">Andhra Pradesh</option>
+                                        <option value="Karnataka">Karnataka</option>
+                                        <option value="Telangana">Telengana</option>
+                                        <option value="Tamilnadu"> Tamilnadu</option>
+                                        <opton value="Kerala">Kerala</opton>
+                                        <option>Other</option>
+                                    </select></td>
+                            </tr>
+                            <tr>
+                                <td><label for="issuedby">Issued by</label></td>
+                                <td><select id="issuedby" name="issuedby">
+                                        <option value="selectstate" selected disabled>select option.....</option>
+                                        <option value="value1">value 1</option>
+                                        <option value="value2">value 2s</option>
+                                        <option>Other</option>
+                                    </select></td>
+                            </tr>
+                            <tr>
+                                <td><label for="literacylevel">Literacy Level</label></td>
+                                <td><select id="literacylevel" name="literacylevel">
+                                        <option value="selectstate" selected disabled>select option.....</option>
+                                        <option>Literate</option>
+                                        <option>Illiterate</option>
+                                    </select></td>
+                            </tr>
+                            <tr>
+                                <td><label for="numberofhousemembers">Number Of House Members</label></td>
+                                <td><input type="text" id="numberofhousemembers" name="numberofhousemembers"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="numberofdependents">Number Of Dependents</label></td>
+                                <td><input type="text" id="numberofdependents" name="numberofdependents"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="candonateblood">Can Donate Blood</label></td>
+                                <td><input type="checkbox" id="candonateblood" name="candonateblood"
+                                        class="notApplyCSS"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="socialsecurityid" class="main-label">Social Security Id</label></td>
+                                <td><input type="text" id="socialsecurityid" name="socialsecurityid"></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Behind the Scene Division-->
+            <div id="behindTheScene">
+                <h3>Behind The Scene</h3>
+                <div>
+                    <div>
+                        <table>
+                            <tr>
+                                <td><label for="createdBy">Created By</label></td>
+                                <td><input type="text" id="createdBy" name="createdBy" size="14"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="createdOn">Created On</label></td>
+                                <td><input type="date" id="createdOn" name="createdOn" size="14"></td>
+                            </tr>
+                            <tr>
+
+                            </tr>
+                        </table>
+                    </div>
+                    <div>
+                        <table>
+                            <tr>
+                                <td><label for="modifiedBy">Modified By</label></td>
+                                <td><input type="text" id="modifiedBy" name="modifiedBy" size="14"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="modifiedOn">Modified On</label></td>
+                                <td><input type="date" id="modifiedOn" name="modifiedOn" size="14"></td>
+                            </tr>
+                            <tr>
+
+                            </tr>
+                        </table>
+                    </div>
+                    <div>
+                        <table>
+                            <tr>
+                                <td><label for="supervisedBy">Supervised By</label></td>
+                                <td><input type="text" id="supervisedBy" name="supervisedBy" size="14"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="supervisedOn">Supervised On</label></td>
+                                <td><input type="date" id="supervisedOn" name="supervisedOn" size="14"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="ClosedOn">Closed On</label></td>
+                                <td><input type="date" id="ClosedOn" name="ClosedOn" size="14"></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div style="background-color: #ADD9E6; padding: 10px 0px;">
+
+            </div>
+
+        </div>
+        <div id="right-div" class="item">
+            <div>
+                <button id="view-btn">view</button>
+                <button id="add-btn">add</button>
+                <button id="edit-btn">edit</button>
+                <button id="delete-btn">delete</button>
+                <button id="save-btn">save</button>
+                <button id="cancel-btn">cancel</button>
+            </div>
+
+        </div>
+    </section>
+    <script>
+        document.getElementById("view-btn").disabled = false;
+document.getElementById("add-btn").disabled = false;
+document.getElementById("edit-btn").disabled = true;
+document.getElementById("delete-btn").disabled = true;
+document.getElementById("save-btn").disabled = true;
+document.getElementById("cancel-btn").disabled = true;
+
+
+
+const addBtn = document.getElementById("add-btn");
+addBtn.addEventListener("click", function () {
+    document.getElementById("view-btn").disabled = true;
+    document.getElementById("add-btn").disabled = true;
+    document.getElementById("edit-btn").disabled = true;
+    document.getElementById("delete-btn").disabled = true;
+    document.getElementById("save-btn").disabled = false;
+    document.getElementById("cancel-btn").disabled = false;
+});
+
+
+const saveBtn = document.getElementById("save-btn");
+saveBtn.addEventListener("click", function () {
+    // Get the value 
+    const clientNameField = document.getElementById("clientName").value.trim();
+    const clientIdField = document.getElementById("clientId").value.trim();
+    const clientTypeField = document.getElementById("clientType").value.trim();
+    const roleField = document.getElementById("role");
+    const titleField = document.getElementById("Title").value.trim();
+    const middleNameField = document.getElementById("middleName").value.trim();
+    const genderField = document.getElementById("gender");
+    const countryField = document.getElementById("country");
+    const firstNameField = document.getElementById("firstName").value.trim();
+    const cityField = document.getElementById("city");
+    const socialsecurityidField = document.getElementById("socialsecurityid").value.trim();
+    const passportnoField = document.getElementById("passportno").value.trim();
+    const numberofchildrenField = document.getElementById("numberofchildren").value.trim();
+    const numberofhousemembersField = document.getElementById("numberofhousemembers").value.trim();
+    const numberofdependentsField = document.getElementById("numberofdependents").value.trim();
+    const lastNameField = document.getElementById("lastName").value.trim();
+    const createdByField = document.getElementById("createdBy").value.trim();
+    const modifiedByField = document.getElementById("modifiedBy").value.trim();
+    const supervisedByField = document.getElementById("supervisedBy").value.trim();
+    const nationalityField = document.getElementById("nationality");
+    const passportexpirydateField = document.getElementById("passportexpirydate");
+    const maritalstatusField = document.getElementById("maritalstatus");
+    const bloodgroupField = document.getElementById("bloodgroup");
+    const residentField = document.getElementById("resident");
+    const issuedbyField = document.getElementById("issuedby");
+    const literacylevelField = document.getElementById("literacylevel");
+
+    if (clientNameField === "") {
+        alert("Client Name should not be empty!");
+        document.getElementById("clientName").focus();
+        return;
+    }
+    if (!isValidCharacters(clientNameField)) {
+        alert("Client Name should contain only characters");
+        document.getElementById("clientName").focus();
+        return;
+    }
+    if (clientIdField === "") {
+        alert("Client Id should not be empty!");
+        document.getElementById("clientName").focus();
+        return;
+    }
+    if (!isValidNumbers(clientIdField)) {
+        alert("Client ID should contain only numbers");
+        document.getElementById("clientId").focus();
+        return;
+    }
+    if (clientTypeField === "") {
+        alert("Client Type should not be empty!");
+        document.getElementById("clientName").focus();
+        return;
+    }
+
+    if (roleField.value === "selectstate") {
+        alert("Role field should not be empty!");
+        document.getElementById("role").focus();
+        return;
+    }
+    if (titleField === "") {
+        alert("Title field should not be empty!");
+        document.getElementById("Title").focus();
+        return;
+    }
+    if (!isValidCharacters(titleField)) {
+        alert("Title field should contain only characters");
+        document.getElementById("clientName").focus();
+        return;
+    }
+    if (middleNameField === "") {
+        alert("Middle Name should not be empty!");
+        document.getElementById("middleName").focus();
+        return;
+    }
+    if (!isValidCharacters(middleNameField)) {
+        alert("Middle Name should contain only characters");
+        document.getElementById("middleName").focus();
+        return;
+    }
+    if (genderField.value === "selectstate") {
+        alert("Gender field should not be empty!");
+        document.getElementById("gender").focus();
+        return;
+    }
+    if (countryField.value === "selectstate") {
+        alert("country field should not be empty!");
+        document.getElementById("country").focus();
+        return;
+    }
+    if (firstNameField === "") {
+        alert("first Name should not be empty!");
+        document.getElementById("firstName").focus();
+        return;
+    }
+    if (!isValidCharacters(firstNameField)) {
+        alert("first Name should contain only characters");
+        document.getElementById("firstName").focus();
+        return;
+    }
+    if (cityField.value === "selectstate") {
+        alert("city field should not be empty!");
+        document.getElementById("city").focus();
+        return;
+    }
+    if (socialsecurityidField === "") {
+        alert("Socialsecurity Id should not be empty!");
+        document.getElementById("socialsecurityid").focus();
+        return;
+    }
+    if (!isValidNumbers(socialsecurityidField)) {
+        alert("socialsecurity ID should contain only numbers");
+        document.getElementById("socialsecurityid").focus();
+        return;
+    }
+    if (!isValidNumbers(passportnoField)) {
+        alert("Passportno should contain only numbers");
+        document.getElementById("passportno").focus();
+        return;
+    }
+    if (!isValidNumbers(numberofchildrenField)) {
+        alert("Number of chlidren should contain only numbers");
+        document.getElementById("numberofchildren").focus();
+        return;
+    }
+    if (!isValidNumbers(numberofdependentsField)) {
+        alert("Number of dependents should contain only numbers");
+        document.getElementById("numberofdependents").focus();
+        return;
+    }
+    if (!isValidNumbers(numberofhousemembersField)) {
+        alert(" Number of houde members should contain only numbers");
+        document.getElementById("numberofhousemembers").focus();
+        return;
+    }
+    if (!isValidCharacters(lastNameField)) {
+        alert("Last Name should contain only characters");
+        document.getElementById("lastName").focus();
+        return;
+    }
+    if (!isValidCharacters(createdByField)) {
+        alert("Created by field should contain only characters");
+        document.getElementById("clientName").focus();
+        return;
+    }
+    if (!isValidCharacters(modifiedByField)) {
+        alert("Modified by field should contain only characters");
+        document.getElementById("modifiedBy").focus();
+        return;
+    }
+    if (!isValidCharacters(supervisedByField)) {
+        alert("supervised by filed should contain only characters");
+        document.getElementById("supervisedBy").focus();
+        return;
+    }
+    if (nationalityField.value === "selectstate") {
+        alert("Nationality field should not be empty!");
+        document.getElementById("nationality").focus();
+        return;
+    }
+    if (passportexpirydateField.value === "selectstate") {
+        alert("Passport expiry  field should not be empty!");
+        document.getElementById("passportexpirydate").focus();
+        return;
+    }
+    if (maritalstatusField.value === "selectstate") {
+        alert("Marital status field should not be empty!");
+        document.getElementById("maritalstatus").focus();
+        return;
+    }
+    if (bloodgroupField.value === "selectstate") {
+        alert("bloodgroup field should not be empty!");
+        document.getElementById("bloodgroup").focus();
+        return;
+    }
+    if (residentField.value === "selectstate") {
+        alert("Resident field should not be empty!");
+        document.getElementById("resident").focus();
+        return;
+    }
+    if (issuedbyField.value === "selectstate") {
+        alert("Issued by field should not be empty!");
+        document.getElementById("issuedby").focus();
+        return;
+    }
+    if (literacylevelField.value === "selectstate") {
+        alert("Literacy level field should not be empty!");
+        document.getElementById("literactlevel").focus();
+        return;
+    }
+
+
+     const formData = {
+         clientName: document.getElementById("clientName").value.trim(),
+         clientId: document.getElementById("clientId").value.trim(),
+         clientType: document.getElementById("clientType").value.trim(),
+         role: document.getElementById("role").value,
+         title: document.getElementById("Title").value.trim(),
+         middleName: document.getElementById("middleName").value.trim(),
+         gender: document.getElementById("gender").value,
+         country: document.getElementById("country").value,
+         firstName: document.getElementById("firstName").value.trim(),
+         city: document.getElementById("city").value,
+         socialsecurityid: document.getElementById("socialsecurityid").value.trim(),
+         passportno: document.getElementById("passportno").value.trim(),
+         numberofchildren: document.getElementById("numberofchildren").value.trim(),
+         numberofhousemembers: document.getElementById("numberofhousemembers").value.trim(),
+         numberofdependents: document.getElementById("numberofdependents").value.trim(),
+         lastName: document.getElementById("lastName").value.trim(),
+         createdBy: document.getElementById("createdBy").value.trim(),
+         modifiedBy: document.getElementById("modifiedBy").value.trim(),
+         supervisedBy: document.getElementById("supervisedBy").value.trim(),
+         nationality: document.getElementById("nationality").value,
+         passportexpirydate: document.getElementById("passportexpirydate").value,
+         maritalstatus: document.getElementById("maritalstatus").value,
+         bloodgroup: document.getElementById("bloodgroup").value,
+         resident: document.getElementById("resident").value,
+         issuedby: document.getElementById("issuedby").value,
+         literacylevel: document.getElementById("literacylevel").value
+     };
+
+    // // Convert form data to JSON string
+     const jsonData = JSON.stringify(formData);
+
+    // // Save JSON data to cookie
+     document.cookie = "formData=" + encodeURIComponent(jsonData) + "; expires=Thu, 18 Dec 2025 12:00:00 UTC; path=/";
+
+    alert("Form data saved to cookie successfully!");
+
+});
+function isValidCharacters(value) {
+    return /^[a-zA-Z\s]*$/.test(value);
+}
+function isValidNumbers(value) {
+    return /^\d*$/.test(value);
+}
+
+const cancelBtn = document.getElementById("cancel-btn");
+cancelBtn.addEventListener("click", function () {
+    // Clear all fields including dropdown boxes
+    document.querySelectorAll("input, select").forEach(function (field) {
+        field.value = "";
+        if (field.type === "radio" || field.type === "checkbox") {
+            field.checked = false;
+        }
+    });
+
+    // Enable Add and View buttons and disable others
+    document.getElementById("view-btn").disabled = false;
+    document.getElementById("add-btn").disabled = false;
+    document.getElementById("edit-btn").disabled = true;
+    document.getElementById("delete-btn").disabled = true;
+    document.getElementById("save-btn").disabled = true;
+    document.getElementById("cancel-btn").disabled = true;
+});
+
+    </script> 
+</body>
+
+</html>

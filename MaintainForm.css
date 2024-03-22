@@ -1,0 +1,167 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    border: 2px solid grey;
+    margin: 1px;
+}
+
+#head-div {
+    background-color: #0001F9;
+    color: white;
+    border: 1px solid white;
+    margin: 1px;
+}
+
+#head-div h2 {
+    font-weight: 300;
+}
+
+#form-section {
+    display: flex;
+    height:95vh;
+}
+
+#left-div {
+    flex: 0.2;
+    margin: 1px;
+}
+
+#middle-div {
+    flex: 0.6;
+    padding: 20px 100px;
+    margin: 1px;
+}
+
+#right-div {
+    flex: 0.2;
+    margin: 1px;
+}
+
+.item {
+    border: 2px solid grey;
+}
+
+label {
+    font-size: 13px;
+}
+
+input,
+select {
+    padding: 2px;
+    margin-left: 2px;
+    width: 100%;
+}
+
+select {
+    width: 80%;
+}
+
+.notApplyCSS {
+    width: auto;
+}
+
+.main-label {
+    color: #553DD4;
+    font-size: 15px;
+}
+
+
+tr td:nth-child(1) {
+    text-align: right;
+}
+
+tr td:nth-child(2) {
+    
+    padding-bottom: 2px;
+}
+
+.two-col-div {
+    display: flex;
+    justify-content: space-around;
+}
+
+#client-div {
+    margin-bottom: 10px;
+}
+
+#personalClient,
+#behindTheScene {
+    border: 1px solid gray;
+    margin-bottom: 20px;
+}
+
+#personalClient h3 {
+    background-color: #00669A;
+    font-weight: 300;
+}
+
+#behindTheScene h3 {
+    background-color: #ADD9E6;
+    font-weight: 300;
+}
+
+#behindTheScene div {
+    display: flex;
+    justify-content: space-around;
+}
+
+#right-div {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+
+#right-div div button {
+    display: block;
+    width: 90px;
+    margin-bottom: 5px;
+}
+@media only screen and (max-width: 950px) {
+    body {
+        border:0px;
+    }
+    #form-section {
+        flex-direction: column;
+    }
+
+    .two-col-div {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .two-col-div>div {
+        margin: auto;
+    }
+
+    #behindTheScene>div {
+        flex-direction: column;
+    }
+
+    #middle-div {
+        padding: 20px 20px;
+    }
+}
+
+@media only screen and (max-width: 1350px) {
+    body {
+        border:0px;
+    }
+    #middle-div {
+        padding: 20px 20px;
+    }
+    
+    #left-div {
+        flex: 0.15;
+    }
+
+    #middle-div {
+        flex: 0.7;
+    }
+
+    #right-div {
+        flex: 0.15;
+    }
+}
